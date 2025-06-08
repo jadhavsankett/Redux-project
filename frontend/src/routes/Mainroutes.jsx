@@ -1,0 +1,16 @@
+import { Route, Routes } from "react-router-dom"
+import Home from "../pages/Home";
+import Login from "../pages/Login";
+import Rigsters from "../pages/Rigsters";
+
+const Mainroutes = () => {
+  return (
+    <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/rigsters" element={<Rigsters/>}/>
+    </Routes>
+  )
+}
+
+export default Mainroutes
