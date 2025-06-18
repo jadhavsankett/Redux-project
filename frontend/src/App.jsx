@@ -3,12 +3,14 @@ import Navbar from "./componets/Navbar"
 import Mainroutes from "./routes/Mainroutes"
 import { asyncurrentuser } from "./store/actions/UserAction"
 import { useDispatch } from "react-redux"
+import { asynloadproduct } from "./store/actions/ProductAction"
 
 const App = () => {
   const dispatch = useDispatch();
 
 useEffect(()=>{
   dispatch(asyncurrentuser());
+  dispatch(asynloadproduct());
 },[])
 
   return (

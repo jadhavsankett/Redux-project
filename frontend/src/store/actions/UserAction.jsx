@@ -1,6 +1,6 @@
 import { toast } from "react-toastify"
 import axios from "../../api/axiosconfig";
-import { loaduser } from "../redusers/UserSlice";
+import { loaduser, removeuser } from "../redusers/UserSlice";
 
 
 export const asyncurrentuser = (user) => async (dispatch, getstate) => {
@@ -19,7 +19,8 @@ export const asyncurrentuser = (user) => async (dispatch, getstate) => {
 export const asynclogoutuser = () => async (dispatch, getstate) => {
     try {
         localStorage.removeItem("user");
-        console.log("log out the user .");
+        dispatch(removeuser());
+        // console.log("log out the user .");
     } catch (error) {
         toast.error("Error: Could not Login user");
     }

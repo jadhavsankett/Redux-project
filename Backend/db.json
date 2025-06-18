@@ -11,29 +11,96 @@
       "id": "FuZiLLUViJSWfmZNUuVZe",
       "name": "pentonic",
       "email": "pentonic@gamil.com",
-      "pass": "784512",
+      "pass": "7877",
       "isAdmin": false
     },
     {
-      "id": "nk_5RzZMe6qYL-On-q6uA",
-      "name": "good luck",
-      "email": "good@luck.com",
-      "pass": "12345",
+      "id": "f3OZajXAsRYELaHApTYyl",
+      "name": "sultan",
+      "email": "sultan@gamil.com",
+      "pass": "7273",
+      "isAdmin": false
+    },
+    {
+      "id": "FApL_qZxFhS5atkQQPmoR",
+      "name": "camel case",
+      "email": "camel@case.com",
+      "pass": "8090",
+      "isAdmin": false
+    },
+    {
+      "id": "U9jHS09PXvdKJYYTDctHA",
+      "name": "two  x five",
+      "email": "twoxfive@gamil.com",
+      "pass": "5513",
+      "isAdmin": true
+    },
+    {
+      "id": "SyDFesB47BdOaY0M7re-P",
+      "name": "pentonic",
+      "email": "pentonic@gamil.com",
+      "pass": "7877",
       "isAdmin": false
     }
   ],
   "products": [
     {
       "id": "1",
-      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-      "price": 109.95,
-      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "title": "Fjallraven - Foldsack",
+      "price": "109",
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday camel case include the upper body out fit like With a focus on quality and design, we curate products that enhance your everyday",
       "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-      "rating": {
-        "rate": 3.9,
-        "count": 120
-      }
+      "image": "https://images.unsplash.com/photo-1634409719592-7751d57c819d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDY5fHx8ZW58MHx8fHx8",
+      "desc": "white tee and fastion with the mobel giral \n",
+      "catg": "fastion"
+    },
+    {
+      "id": "QjrRdDBm637Kz66MRJH45",
+      "image": "https://images.unsplash.com/photo-1516726817505-f5ed825624d8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "natural indian calture",
+      "price": "5699",
+      "desc": "this way of the indian country for the  national opinion for the game camel case include the upper body out fit like With a focus on quality and design, we curate products that enhance your everyday",
+      "catg": "travling"
+    },
+    {
+      "id": "bQEqjsM_Bo-y8_RtLZfXs",
+      "image": "https://images.unsplash.com/photo-1735812372238-ca7e2b38e0ac?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Model @mayamariahxx",
+      "price": "34",
+      "desc": "camel case include the upper body out fit like With a focus on quality and design, we curate products that enhance your everyday camel case include the upper body out fit like With a focus on quality and design, we curate products that enhance your everyday am here",
+      "catg": "fastion"
+    },
+    {
+      "id": "1Gx5U45RcxRzoEs-rQKBC",
+      "image": "https://images.unsplash.com/photo-1628196748491-f1b0bbfc99ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D",
+      "title": "woman olo-sleve",
+      "price": "678",
+      "desc": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
+      "catg": "fastion"
+    },
+    {
+      "id": "N46f9AjyvnFQQItemvkFp",
+      "image": "https://images.unsplash.com/photo-1649242067383-5ddf5110f94e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D",
+      "title": "giral ola -upper Udi",
+      "price": "95",
+      "desc": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
+      "catg": "desinging"
+    },
+    {
+      "id": "DIBiYIFhRIkHlI2gZoRlm",
+      "image": "https://images.unsplash.com/photo-1645994743590-f40a8e5a74f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8",
+      "title": "woman red @alexa camel Red Bull",
+      "price": "100",
+      "desc": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
+      "catg": "wonder"
+    },
+    {
+      "id": "LKgRCFIyeWcF_rNPZnGM8",
+      "image": "https://images.unsplash.com/photo-1621694691103-e326ece9252b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "giral black tshirt @camel",
+      "price": "85",
+      "desc": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
+      "catg": "tee"
     }
   ],
   "carts": []

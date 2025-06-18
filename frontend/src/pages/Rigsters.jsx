@@ -30,29 +30,29 @@ const Rigsters = () => {
           onSubmit={handleSubmit(Rigstershandler)}
           className=" w-[70%] h-[70%] bg-gray-100/50 rounded-2xl p-5">
 
-            <h1 className="font-black text-3xl text-center text-gray-500">Sing in</h1>
+            <h1 className="font-black text-3xl text-center text-gray-500">Register in</h1>
 
             <h3 className="mx-5 mt-2 font-black text-amber-700">User Name</h3>
             <input 
             {...register("name")}
-            className="mx-3 bg-amber-100/70 py-1 px-3 outline-0 rounded-xl"
+            className="mx-3 bg-amber-100/70 py-2 px-5 outline-0 rounded-xl w-[90%]"
             type="text" placeholder="Enter Name.."/>
 
-            <h3 className="mx-5 font-black text-amber-700">Email id</h3>
+            <h3 className="mx-5 mt-2 font-black text-amber-700">Email id</h3>
 
             <input 
             {...register("email")}
-            className="mx-3 bg-amber-100/70 py-1 px-3 outline-0 rounded-2xl "
+            className="mx-3 bg-amber-100/70 py-2 px-5 outline-0 rounded-2xl w-[90%]"
             type="email" placeholder="Email id.."/>
 
-            <h3 className="mx-5 font-black text-amber-700">Password</h3>
+            <h3 className="mx-5 mt-2 font-black text-amber-700">Password</h3>
 
             <input 
             {...register("pass")}
-            className="mx-3 bg-amber-100/70 py-1 px-3 outline-0 rounded-2xl "
+            className="mx-3 bg-amber-100/70 py-2 px-5 outline-0 rounded-2xl w-[90%]"
             type="password" placeholder="********"/>
 
-            <button className="mx-3 mt-2 px-5 py-1 bg-amber-400 text-amber-700 rounded-xl font-black text-center hover:scale-102 duration-30">Rigster User</button>
+            <button className="mx-3 mt-3 px-5 py-2 bg-amber-400 text-amber-700 rounded-xl font-black text-center hover:scale-102 duration-30">Rigster User</button>
             <p className="mx-3 mt-2 font-thin">
                Already have an account?
                <Link

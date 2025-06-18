@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useForm } from "react-hook-form"
 import { asyncloginuser } from "../store/actions/UserAction"
 import { useDispatch } from "react-redux";
@@ -6,9 +6,11 @@ import { useDispatch } from "react-redux";
 const Login = () => {
    const dispatch = useDispatch();
    const {register , handleSubmit ,reset} = useForm()
+   const navigate = useNavigate()
 
   const Loginhandler = (user) => {
      dispatch(asyncloginuser(user));
+     navigate("/admin/create-product");
   }
 
   return (
@@ -30,20 +32,20 @@ const Login = () => {
             <h3 className="mx-5 mt-2 font-black text-amber-700">User Name</h3>
             <input 
             {...register("email")}
-            className="mx-3 bg-amber-100/70 py-1 px-3 outline-0 rounded-xl"
+            className="mx-3 bg-amber-100/70 py-2 px-5 outline-0 rounded-xl w-[90%]"
             type="email" placeholder="Enter Name.."/>
             
 
-            <h3 className="mx-5 font-black text-amber-700">Password</h3>
+            <h3 className="mx-5 mt-2 font-black text-amber-700">Password</h3>
 
             <input 
             {...register("pass")}
-            className="mx-3 bg-amber-100/70 py-1 px-3 outline-0 rounded-2xl "
+            className="mx-3 bg-amber-100/70 py-2 px-5 outline-0 rounded-2xl w-[90%]"
             type="password" placeholder="********"/>
 
-            <button className="mx-3 mt-2 px-5 py-1 bg-amber-400 text-amber-700 rounded-xl font-black text-center hover:scale-102 duration-30">Login User</button>
-            <p className="mx-3 mt-2 font-thin">
-               Already have an account?
+            <button className="mx-3 mt-4 px-5 py-1 bg-amber-400 text-amber-700 rounded-xl font-black text-center hover:scale-102 duration-30">Login User</button>
+            <p className="mx-3 mt-3 font-thin">
+               Don't have an account?
                <Link
                className="text-blue-400" 
                to="/rigsters">
