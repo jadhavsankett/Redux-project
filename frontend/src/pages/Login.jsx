@@ -10,7 +10,7 @@ const Login = () => {
 
   const Loginhandler = (user) => {
      dispatch(asyncloginuser(user));
-     navigate("/admin/create-product");
+     navigate("/products");
   }
 
   return (

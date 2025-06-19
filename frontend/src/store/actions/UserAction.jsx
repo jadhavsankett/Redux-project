@@ -42,9 +42,29 @@ export const asyncloginuser = (user) => async (dispatch, getstate) => {
 export const asyncregisteruser = (user) => async (dispatch, getstate) => {
     try {
         const res = await axios.post("/users", user);  //post means data dalna and get means data lena;
-        console.log(res)
-
+        
     } catch (error) {
         toast.error("Error: Could not register user");
+    }
+}
+
+export const asyncupdateuser = (id, user) => async (dispatch, getState) => {
+    try {
+        const { data } = await axios.patch(`/users/${id}`, user);
+        localStorage.setItem("users", JSON.stringify(data));
+    } catch (error) {
+        toast.error("Error: update user");
+       // Log actual error for debugging
+    }
+};
+
+export const asyndeleteuser = (id) => async (dispatch, getstate) => {
+    try {
+
+     await axios.delete("/users/"+id);
+     dispatch(asynclogoutuser());
+    
+    } catch (error) {
+        toast.error("Error: Could not delete the product ");
     }
 }
