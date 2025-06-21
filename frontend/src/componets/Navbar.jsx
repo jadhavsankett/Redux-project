@@ -24,6 +24,9 @@ const Navbar = () => {
       <NavLink 
       className={(e)=>e.isActive?"text-gray-400":" "}
       to={"/admin/user-profile"}>Profile</NavLink>
+      {/* <NavLink 
+      className={(e)=>e.isActive?"text-gray-400":" "}
+      to={"/cart"}>Cart</NavLink> */}
 
       </>:<>
 

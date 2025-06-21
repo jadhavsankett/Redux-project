@@ -5,10 +5,11 @@ import { asyndeleteproduct, asynupdateproduct } from "../../store/actions/Produc
 import { asynclogoutuser, asyncupdateuser, asyndeleteuser } from "../../store/actions/UserAction";
 
 const UserProfile = () => {
-  const {
-         userReducer:{users}
-        } 
-        =  useSelector((state)=> state);
+  // const {
+  //        userReducer:{users}
+  //       } 
+  //       =  useSelector((state)=> state);
+  const users =  useSelector((state)=> state.userReducer.users);
 
 
    const {register , handleSubmit ,reset} = useForm({
@@ -26,9 +27,9 @@ const UserProfile = () => {
       dispatch(asyncupdateuser(users.id, user));
     }
 
-     const logoutuserhandler =()=>{
-      dispatch(asynclogoutuser());
-      navigate("/login")
+     const logoutuserhandler = async () => {
+      await dispatch(asynclogoutuser());
+      navigate("/login");
     }
 
     const removehandler =()=>{

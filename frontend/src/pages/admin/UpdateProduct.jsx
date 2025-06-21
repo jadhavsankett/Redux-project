@@ -8,11 +8,13 @@ import {asyndeleteproduct, asynupdateproduct } from "../../store/actions/Product
 
 const Productdetail = () => {
   const {id} = useParams()
-  const {
-         productReducer:{products} , 
-         userReducer:{users}
-        } 
-        =  useSelector((state)=> state);
+  // const {
+  //        productReducer:{products} , 
+  //        userReducer:{users}
+  //       } 
+  //       =  useSelector((state)=> state);
+  const users =  useSelector((state)=> state.userReducer.users);
+const products =  useSelector((state)=> state.productReducer.products);
 
        const product = products.find(product => product.id == id);
       //  console.log(product ,users)

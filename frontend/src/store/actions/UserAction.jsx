@@ -3,7 +3,7 @@ import axios from "../../api/axiosconfig";
 import { loaduser, removeuser } from "../redusers/UserSlice";
 
 
-export const asyncurrentuser = (user) => async (dispatch, getstate) => {
+export const asyncurrentuser = () => async (dispatch) => {
     try {
 
        const user =  JSON.parse(localStorage.getItem("users"));
@@ -16,13 +16,13 @@ export const asyncurrentuser = (user) => async (dispatch, getstate) => {
 }
 
 
-export const asynclogoutuser = () => async (dispatch, getstate) => {
+export const asynclogoutuser = () => async (dispatch) => {
     try {
-        localStorage.removeItem("user");
+        localStorage.removeItem("users");
         dispatch(removeuser());
-        // console.log("log out the user .");
+        // console.log("log out the user.");
     } catch (error) {
-        toast.error("Error: Could not Login user");
+        toast.error("Error: Could not log out user");
     }
 }
 
@@ -33,6 +33,7 @@ export const asyncloginuser = (user) => async (dispatch, getstate) => {
             `/users?email=${user.email}&pass=${user.pass}`
         );
         localStorage.setItem("users",JSON.stringify(data[0]));
+        dispatch(asyncurrentuser());
     } catch (error) {
         toast.error("Error: Could not Login user");
     }

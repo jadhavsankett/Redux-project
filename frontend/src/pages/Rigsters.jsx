@@ -12,6 +12,7 @@ const Rigsters = () => {
     const Rigstershandler = (user) => {
        user.id = nanoid();
        user.isAdmin = false;
+       user.cart = [];
        dispatch(asyncregisteruser(user));
        navigate("/login")
     }
@@ -21,7 +22,7 @@ const Rigsters = () => {
        <div className="w-[100%] h-[80%] flex rounded-xl bg-[url('https://images.unsplash.com/photo-1614850715649-1d0106293bd1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center p-5">
          
           <div className="w-1/2 flex flex-col gap-5 justify-center items-center p-5">
-          <h1 className=" text-yellow-400 text-6xl font-black border-b-2 pb-4">Welcome!</h1>
+          <h1 className=" text-yellow-400 text-6xl font-black border-b-2 pb-4">Rigster Now!</h1>
           <p className="text-orange-300 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus officiis non necessitatibus, asperiores repellat animi commodi error hic.</p>
           </div>
 
